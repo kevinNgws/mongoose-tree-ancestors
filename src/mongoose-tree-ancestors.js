@@ -310,7 +310,7 @@ function treeAncestors(schema, options) {
 				let parentAncestors = newParent[ancestors];
 				let ancestorsArray = (parentAncestors && parentAncestors.push(newParent._id) && parentAncestors) || [];
 				doc[ancestors] = ancestorsArray;
-				doc.save();
+				//doc.save();
 				// update childs
 				updateChilds();
 			});
